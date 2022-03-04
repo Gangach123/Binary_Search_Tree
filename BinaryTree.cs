@@ -9,6 +9,8 @@ namespace BinarySearchTree
     internal class BinaryTree<T>
     {
         public BinarySearch<T> rootNode;
+        int leftCounter = 0;
+        int rightCounter = 0;
 
         //For inserting the node in Binary Tree.
         public void InsertingElements(T data)
@@ -30,6 +32,7 @@ namespace BinarySearchTree
                         if (temp.right == null)
                         {
                             temp.right = node;
+                            rightCounter++;
                             Console.WriteLine($"{node.data} is added to right side of {temp.data}");
                             break;
                         }
@@ -40,6 +43,7 @@ namespace BinarySearchTree
                         if (temp.left == null)
                         {
                             temp.left = node;
+                            leftCounter++;
                             Console.WriteLine($"{node.data} is added to left side of {temp.data}");
                             break;
                         }
@@ -47,6 +51,11 @@ namespace BinarySearchTree
                     }
                 }
             }
+        }
+        //For calculating the size of Binary Tree.
+        public void size()
+        {
+            Console.WriteLine($"The size of Binary tree is {leftCounter + rightCounter + 1}");
         }
     }
 }
