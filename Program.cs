@@ -6,11 +6,11 @@ namespace BinarySearchTree
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Binary Search Tree Problems");
-            BinaryTree<int> bst = new BinaryTree<int>();
+            BinaryTree<int> binaryTree = new BinaryTree<int>();
             //Inserting elements to the binary tree
-            bst.InsertingElements(56);
-            bst.InsertingElements(30);
-            bst.InsertingElements(70);
+            binaryTree.InsertingElements(56);
+            binaryTree.InsertingElements(30);
+            binaryTree.InsertingElements(70);
         }
     }
 }
