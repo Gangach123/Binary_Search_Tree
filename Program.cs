@@ -21,7 +21,10 @@ namespace BinarySearchTree
             binaryTree.InsertingElements(16);
             binaryTree.InsertingElements(63);
             binaryTree.InsertingElements(67);
-            binaryTree.size();
+
+            //Searching for the element in the Binary Tree
+            binaryTree.Search(63);
+            
         }
     }
 }
